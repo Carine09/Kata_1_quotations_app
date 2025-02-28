@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quotations app</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Mes citations</h1>
+    <h2>Gestionnaire de citations en ligne</h2>
+    <h3 id="count"></h3>
+    <div id="form-container">
+        <form id="send-form">
+            <label for="quotation">Citation</label>
+            <input type="text" name="quotation" id="quotation" required>
+            <label for="writer">Autheur</label>
+            <input type="text" name="writer" id="writer" required>
+            <button id="send">Publier</button>
+        </form>
+    </div>
+    <div id="quote-list">
+        <div class="quote">
+            <p class="text"></p>
+            <p class="author"></p>
+            <hr>
+        </div>
+    </div>
 </body>
 </html>

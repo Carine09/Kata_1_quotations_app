@@ -1,0 +1,32 @@
+.text {
+    color: purple;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+.author {
+    color: blue;
+    text-align: center;
+}
+
+#count {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+#form-container {
+    border: solid orange;
+    padding: 30px;
+    border-radius: 20%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
