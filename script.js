@@ -35,10 +35,10 @@ function checkLocalStorage() {
         quoteCount = localStorage.getItem(count);
         citation = localStorage.getItem(citation)
     }
-}
+} // je n'arrive pas à faire afficher sur le html les données stockées
 
 
-checkLocalStorage();
+checkLocalStorage(); // ne fonctionne pas
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
