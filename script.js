@@ -9,17 +9,24 @@ let citation = {
 
 function addQuote(quote,author) {
     // const quoteContainer = document.querySelector(".quote");
-    const quoteList = document.querySelector("#quote-list")
-
+    const quoteList = document.querySelector(".quote-list");
+    
     const newQuote = document.createElement("p");
     newQuote.classList.add("text");
+    // newQuote.textContent = quote; c'est un équivalent de newQuote.innerText
     newQuote.innerText = quote;
-    quoteList.appendChild(newQuote);
-
+    // quoteList.appendChild(newQuote);
+    
     const newAuthor = document.createElement("p");
     newAuthor.classList.add("author");
     newAuthor.innerText = author;
-    quoteList.appendChild(newAuthor);
+    // quoteList.appendChild(newAuthor);
+    
+    const quoteContainer = document.createElement("div");
+    quoteContainer.classList.add("quote");
+    quoteContainer.appendChild(newQuote);
+    quoteContainer.appendChild(newAuthor);
+    quoteList.appendChild(quoteContainer);
 
     quoteCount++;
 
